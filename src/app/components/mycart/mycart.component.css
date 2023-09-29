@@ -1,0 +1,48 @@
+.bgc {
+  /* background-color: #f9e8d6; */
+  margin: 0;
+  height: 100vh;
+  backdrop-filter: blur(12px) ;
+  --webkit-backdrop-filter: blur(12px);
+  /* padding: 550px; */
+}
+.all{
+  height: 100vh;
+  font-size: 30px;
+  background-image: url("../../../assets/images/go.jpg");
+  background-size: cover;
+
+
+}
+.item{
+  border-radius: 20px;
+}
+.button{
+  background-color: burlywood ;
+  position: absolute;
+  top: 85%;
+  color: #000;
+}
+.button:hover{
+  background-color:rgb(218, 138, 33) ;
+}
+.button2{
+  background-color: burlywood ;
+  position: absolute;
+  top: 85%;
+  left:43%;
+  color: #000;
+}
+.button2:hover{
+  background-color:rgb(218, 138, 33) ;
+}
+.button3{
+  background-color: burlywood ;
+  position: absolute;
+  top: 85%;
+  right: 0%;
+  color: #000;
+}
+.button3:hover{
+  background-color:rgb(218, 138, 33) ;
+}

@@ -1,0 +1,103 @@
+/*
+.all{
+  height:100vh;
+  /* background-color: #ffffff; */
+  /* background-image: url("../../../assets/images/go.jpg "); */
+  /* background-size: 100% 100%; */
+  /* background-repeat:no-repeat ; */
+  /* height: 900px; */
+  /* background-size: 2000px 1000px; */
+  /* text-align: center; */
+
+  /* z-index: 1; */
+  /* margin:100px 0px 100px 0px;
+  padding:100px 0px 100px 0px ; */
+/* } */
+/* img{
+  width: 100%;
+}
+.welcome{
+  font-size: 30px;
+  z-index: 3;
+}
+.NAME{
+  z-index: 4;
+  font-size: 100px;
+  color: burlywood;
+}
+.btnbg{
+  background-color: burlywood;
+  border-radius: 10px;
+  padding: 15px 22px 12px 20px;
+
+} */
+/* .blur{
+  width:35%;
+  filter: blur(8px);
+  -webkit-filter: blur(3px);
+  height: 40%;
+  border-radius: 35px;
+  z-index: 4;
+}
+.layer{
+  z-index: 10;
+} */
+.btnbg{
+  background-color: burlywood;
+  border-radius: 10px;
+  padding: 15px 22px 12px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding: 20px 30px 20px 30px;
+}
+.all{
+  height: 100vh;
+  background-image: url("../../../assets/images/go.jpg ");
+  /* background-size: 100% 100%;
+   */
+  background-size: cover;
+  background-repeat:no-repeat ;
+  color: white;
+  /* margin: auto; */
+  font-size:  25px;
+
+
+}
+h2{
+  font-size: 100px;
+  color: #deb887  
+}
+.pad{
+  padding-top: 150px;
+  width: 650px;
+  text-align: center;
+  /* margin-top: 200px; */
+  margin-left: 10%;
+}
+
+.box{
+  /* background-color: burlywood; */
+  backdrop-filter: blur(12px) ;
+  --webkit-backdrop-filter: blur(12px);
+  /* margin-top: 300px; */
+  width: 55%;
+  margin: auto;
+  /* height: 600px; */
+  border-radius: 50px;
+  /* font-size: 100px; */
+}
+.custom{
+
+  height: 500px;
+  padding-top: 50px;
+  width: 65%;
+
+
+}
+.extend{
+  width: 45%px;
+}
+.layer{
+  margin-top: 100px;
+}

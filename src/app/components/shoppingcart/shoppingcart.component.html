@@ -1,0 +1,48 @@
+<div class="all">
+  <div class="container bgc m-auto py-3">
+    <div class="card  w-50 m-auto p-3">
+
+      <div class="image m-auto m-3">
+        <img [src]="item?.image" class="  " alt="">
+      </div>
+      <div class="label my-2">
+        {{item?.name}}: {{item?.price}} EGP
+      </div>
+      <div class="label">
+        size
+      </div>
+      <div class="btn-group py-2 m-4" role="group" aria-label="Basic radio toggle button group">
+        <input [(ngModel)]="size"  value="small" type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-dark" for="btnradio1">Small</label>
+
+        <input [(ngModel)]="size"  value="medium" type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-dark" for="btnradio2">Medium</label>
+
+        <input [(ngModel)]="size"  value="large" type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-dark" for="btnradio3">Large</label>
+      </div>
+      <div class="label">
+        suger
+      </div>
+      <div  class="btn-group py-2 m-4" role="group" aria-label="Basic radio toggle button group">
+        <input [(ngModel)]="sugar"  value="1"  type="radio" class="btn-check" name="btnradio2" id="btnradio12" autocomplete="off" checked>
+        <label  class="btn btn-outline-dark" for="btnradio12">1</label>
+
+        <input [(ngModel)]="sugar"  value="2"  type="radio" class="btn-check" name="btnradio2" id="btnradio22" autocomplete="off">
+        <label class="btn btn-outline-dark"   for="btnradio22">2</label>
+
+        <input [(ngModel)]="sugar" value="3" type="radio" class="btn-check" name="btnradio2" id="btnradio32" autocomplete="off">
+        <label class="btn btn-outline-dark" for="btnradio32">3</label>
+      </div>
+      <div class="buttons">
+        <span class="text-dark my-3 d-block"  >Quantity: {{quantity}} </span>
+        <button class="btn btn-dark  d-inline me-2"(click)="icreasequantity()" >+</button>
+        <button class="btn btn-dark" (click)="decreasequantity()">-</button>
+
+      </div>
+      <div>
+        <button class="btn btn-dark w-100 py-3" routerLink="/mycart" (click)="addtocart()"> Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>

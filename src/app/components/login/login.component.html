@@ -1,0 +1,57 @@
+<div class="all">
+  <section class="login-section section-padding pad ">
+    <div class="box mt-5">
+      <div class="row justify-content-center custom">
+        <div class="col-md-7 col-lg-6 col-xl-5">
+          <div class="login-form ">
+            <h2 class="form-title text-center">Log In to Your Account</h2>
+
+            <form [formGroup]="exform" (ngSubmit)="clicksub()">
+              <div class="form-group">
+                <input
+                  formControlName="email"
+                  type="text"
+                  class="form-control-lg w-100 extend d-block my-4"
+                  placeholder="Enter your Email here"
+                />
+                <small *ngIf="email?.invalid && email?.touched" class="text-danger"
+                  >Email is Required</small
+                >
+                <small *ngIf="email?.invalid " class="text-danger"
+                  >Enter a valid mail</small
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  formControlName="password"
+                  type="password"
+                  class="form-control-lg my-4 w-100 extend d-block"
+                  placeholder="Password"
+                />
+                <small
+                  *ngIf="password?.invalid && password?.touched"
+                  class="text-danger m-4"
+                  >Password is Required ( min 8 chracters)</small
+                >
+              </div>
+
+              <button
+                [disabled]="exform.invalid"
+                class="btnbg form-control-lg w-100 extend mb-3 py-2"
+              >
+                Log In
+              </button>
+
+              <p class="text-center w-100 d-flex flex-nowrap mt-4 mb-0">
+                Don't have an account ?
+                <a routerLink="/signup" class="form-control-lg  w-100   extend btnbg  mx-3 py-2">sign up</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

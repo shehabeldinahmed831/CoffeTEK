@@ -1,0 +1,43 @@
+<div class="all ">
+  <div class="container">
+    <div class="bgc h-auto">
+      <div class=" bgc m3-5">
+        <div class="row d-flex justify-content-center">
+          <div class="cardItem col-md-3 my-5" *ngFor="let card of cards">
+            <div class="card">
+              <div class="card-head">
+                <img [src]="card.image" alt="logo" class="card-logo w-50" />
+
+                <!-- <span class="back-text"> CoffeeTEK </span> -->
+              </div>
+              <div class="card-body">
+                <div class="product-desc">
+                  <span class="product-title">
+                    {{ card?.name }}
+                    <span class="badge"> New </span>
+                  </span>
+                  <span class="product-caption">
+                    {{ card.description }}
+                  </span>
+                </div>
+              </div>
+
+              <div class="buy d-flex flex-row justify-content-between px-4 pb-2">
+                <button
+                  type="button"
+                  class=" btn btn-dark py-2  my-4 btnbg"
+                  (click)="opencart(card)"
+                  [routerLink]="'/cart/'+card.id"
+                >
+                  preferences
+                </button>
+                <!-- [routerLink]="['/cart', card.id]" -->
+                <span class="price"><b>{{card.price}}</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

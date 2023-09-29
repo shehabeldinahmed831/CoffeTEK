@@ -1,0 +1,93 @@
+<div class="all">
+  <section class="signup-section section-padding pad">
+    <div class="box">
+      <div class="row justify-content-center custom">
+        <div class="col-md-7 col-lg-6 col-xl-5">
+          <div class="signup-form">
+            <h2 class="form-title text-center">Create Your Account</h2>
+
+            <form [formGroup]="xform" (ngSubmit)="clickbtn()">
+              <div class="form-group">
+                <input
+                  formControlName="username"
+                  type="text"
+                  class="form-control-lg w-100 extend d-block my-4"
+                  placeholder="UserName"
+                />
+                <small
+                  *ngIf="username.touched && username.hasError('required')"
+                  class="text-danger"
+                  >username is Required</small
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  formControlName="email"
+                  type="text"
+                  class="form-control-lg w-100 my-3 extend d-block"
+                  placeholder="Email"
+                />
+                <!-- *ngIf="email.hasError('required') && email.touched" -->
+                <small
+                  *ngIf="email.valid && email.touched"
+                  class="text-danger"
+                  >Email is Required</small
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  formControlName="password"
+                  type="password"
+                  class="form-control-lg w-100 d-block extend my-3"
+                  placeholder="password"
+                />
+                <small
+                  *ngIf="password.value == '' && password.touched"
+                  class="text-danger"
+                  >password is Required</small
+                >
+              </div>
+              <!-- {{xform.errors|json}} -->
+              <div  class="form-group">
+                <input
+                  formControlName="cpassword"
+                  type="password"
+                  class="form-control-lg w-100 d-block extend my-3"
+                  placeholder="confirm password"
+                />
+                <small
+                  *ngIf="cpassword.value == '' && cpassword.touched"
+                  class="text-danger"
+                  >confirm password is Required</small
+                >
+                <small
+                  *ngIf="xform.errors && cpassword.touched"
+                  class="text-danger"
+                  >Confirm Password missmatch </small
+                >
+              </div>
+
+              <!-- [disabled]="xform.invalid"
+              (click)="clickbtn()"
+            #password-->
+              <button class="btnbg form-control-lg w-100 extend py-2">Sign Up</button>
+
+              <p class="text-center w-100 d-flex flex-nowrap mt-4 mb-0 ">
+                Already have an account ?
+                <a
+                  routerLink="/login"
+                  class="form-control-lg w-100  extend btnbg mx-4 py-2"
+                  >LogIn</a
+                >
+
+              </p>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

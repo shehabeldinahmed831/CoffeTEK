@@ -1,0 +1,33 @@
+.bgc {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(12px) ;
+  --webkit-backdrop-filter: blur(12px);
+
+  /* padding: 550px; */
+}
+/* .cardItem {
+  margin: 20px;
+} */
+.all{
+  height: 100vh;
+  margin: auto;
+  font-size: 40px;
+  background-image: url("../../../assets/images/go.jpg");
+
+}
+.card{
+  border-radius: 20px;
+}
+.label{
+  /* background-color: antiquewhite;   */
+  color:white;
+  font-size: 80px;
+}
+.image{
+  width: 20%;
+  align-self:center;
+}

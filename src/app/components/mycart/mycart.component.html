@@ -1,0 +1,45 @@
+<div class="all">
+  <div   class=" bgc m-auto w-75 overflow-auto">
+    <div *ngIf="isnotvisible==true">
+      <div class="item my-4 py-3 bg-light m-auto" *ngFor="let order of orders">
+        <div class="row ">
+          <div class=" col-md ms-4 " >
+            <img [src]="order.imagesrc" alt="">
+          </div>
+          <div class="col-lg py-2">
+            {{order.itemname}}
+          </div>
+          <div class="col-lg py-2">
+            Sugar: {{order.sugar}}
+          </div>
+          <div class="col-lg py-2">
+            Unite Price: {{order.itemprice}}
+          </div>
+          <div class="col-lg py-2">
+            quantity: {{order.quantity}}
+          </div>
+          <div class="col-lg py-2 ">
+            Total Price: {{order.price}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button routerLink="/menu" class="btn btn-dark button"> Back to Menu</button>
+    </div>
+    <div>
+      <button  class="btn btn-dark button2"> Total Price: {{checkoutPrice}}</button>
+    </div>
+    <div>
+      <button  class="btn btn-dark button3" (click)="clear()"> Check out</button>
+    </div>
+    <div *ngIf="toastisvisible" class="toast align-items-center text-bg-primary border-0 button3" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>

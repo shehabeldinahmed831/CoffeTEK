@@ -1,0 +1,129 @@
+
+  .bgc {
+    /* background-color: #f9e8d6; */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(12px) ;
+    --webkit-backdrop-filter: blur(12px);
+    /* padding: 550px; */
+  }
+  .all{
+    height: 100vh;
+    margin: auto;
+    font-size: 40px;
+    background-image: url("../../../assets/images/go.jpg");
+
+  }
+  .card{
+    opacity: 0.9;
+    border-radius: 20px;
+  }
+/* .card {
+  width: 500px;
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+} */
+
+/* .card-head {
+  position: relative;
+  height: 252px;
+} */
+/*
+.card-logo {
+  width: 150px;
+  margin: 20px;
+  margin-left: 70px;
+} */
+
+/* .product-img {
+  position: absolute;
+  left: 0;
+  margin-top: -16px;
+  margin-left: 50px;
+} */
+
+
+/* .card-body {
+  height: 255px;
+  background: #fff;
+  border-radius: 0 0 25px 25px;
+} */
+
+/* .product-title {
+  padding: 20px 20px 5px 20px;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.badge {
+  position: relative;
+  font-size: 10px;
+  font-weight: 300;
+  color: #fff;
+  background: #f35e3d;
+  padding: 2px 5px;
+  border-radius: 4px;
+  top: -2px;
+  margin-left: 5px;
+} */
+
+/* .product-caption {
+  display: block;
+  padding: 0 20px;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+} */
+
+/* .product-size h4 {
+  font-size: 11px;
+  padding: 0 21px;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.ul-size li {
+  list-style: none;
+  float: left;
+  margin-right: 20px;
+}
+
+.ul-size li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 11px;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 23px;
+  color: #000;
+}
+
+.ul-size li a:hover {
+  background: #f35e3d;
+  color: #fff;
+}
+
+.buy .buyButon {
+  background-color: #b88065;
+  color: white;
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.buy .price {
+  font-size: larger;
+}
+
+.btnbg {
+  background-color: #b88065;
+} */
